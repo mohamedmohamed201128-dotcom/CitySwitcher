@@ -1,0 +1,21 @@
+طريقة استخراج APK تلقائيًا بدون Android Studio:
+
+1) أنشئ حسابًا مجانيًا على https://github.com إذا لم يكن لديك حساب.
+2) أنشئ Repository جديدًا (New repository)، واجعله Public أو Private.
+3) فك ضغط هذا الملف على الكمبيوتر.
+4) ارفع كل الملفات والمجلدات الموجودة داخله إلى المستودع، مع الحفاظ على مجلد .github.
+5) بعد رفع الملفات، افتح تبويب Actions في المستودع.
+6) اختر "Build City Switcher APK" ثم اضغط Run workflow إذا لم يبدأ البناء تلقائيًا.
+7) انتظر انتهاء البناء بنجاح، افتح عملية البناء، ثم نزّل Artifact باسم CitySwitcher-debug-apk.
+8) فك ضغط الـ Artifact؛ ستجد app-debug.apk. انقله إلى هاتفك وثبّته.
+
+المدن/المناطق الزمنية المتاحة:
+- Texas (Central Time): America/Chicago — لمعظم مدن تكساس مثل دالاس وهيوستن وأوستن وسان أنطونيو.
+- Los Angeles (Pacific Time): America/Los_Angeles.
+- Egypt (Cairo Time): Africa/Cairo.
+
+مهم:
+- البناء يتم على خوادم GitHub؛ لا تحتاج Android Studio.
+- هذه نسخة Debug للتجربة وليست منشورة على Google Play.
+- التطبيق يفتح إعدادات الوقت والموقع فقط؛ اختيار المنطقة الزمنية يتم يدويًا من إعدادات Android.
+- لا يغير التطبيق البروكسي أو IP أو GPS.
